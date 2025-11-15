@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 import pandas as pd
 import joblib
@@ -67,4 +67,5 @@ st.markdown("""
 - `label_encoder_geography.pkl`
 - `label_encoder_gender.pkl`
 - `min_max_scaler.pkl`
+
 """)
