@@ -1,9 +1,12 @@
+import importlib.util
+
+print("joblib installed?", importlib.util.find_spec("joblib") is not None)
 
 import streamlit as st
 import pandas as pd
 import joblib
 import pkgutil
-print("joblib installed?", pkgutil.find_loader("joblib") is not None)
+
 
 # Load the trained KNN model
 model = joblib.load('churn_model.pkl')
@@ -71,4 +74,5 @@ st.markdown("""
 - `min_max_scaler.pkl`
 
 """)
+
 
